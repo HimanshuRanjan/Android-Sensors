@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "466506250743",
+    "firebase_url": "https://tiltspot.firebaseio.com",
+    "project_id": "tiltspot",
+    "storage_bucket": "tiltspot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466506250743:android:c75ff03e342c82d8",
+        "android_client_info": {
+          "package_name": "com.example.android.tiltspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466506250743-omskhvckipuef6tddk5liuae09qps3ft.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.tiltspot",
+            "certificate_hash": "8bdd1f3717239042f7859872aab8bb6da62b1507"
+          }
+        },
+        {
+          "client_id": "466506250743-ha9oa2duf2ppro59lcmaajula13epksc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU-WNnxkl0_EU4CrY2FmStiaxo5wr9LSM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466506250743-ha9oa2duf2ppro59lcmaajula13epksc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

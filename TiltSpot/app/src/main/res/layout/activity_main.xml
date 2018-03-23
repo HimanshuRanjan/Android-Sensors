@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="com.example.android.tiltspot.MainActivity">
+
+    <!-- Four spot drawables for the cardinal directions on the device.
+       The drawables are 100% black by default (in the XML). Alpha sets the
+       "tint" to shades of gray. Setting the alpha to 0 here makes them
+       invisible. -->
+    <ImageView
+        android:id="@+id/spot_top"
+        android:layout_width="@dimen/spot_size"
+        android:layout_height="@dimen/spot_size"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/rdGroup"
+        app:layout_constraintEnd_toStartOf="@+id/spot_bottom"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/spot"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/spot_bottom"
+        android:layout_width="@dimen/spot_size"
+        android:layout_height="@dimen/spot_size"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/rdGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/spot"
+        tools:ignore="ContentDescription" />
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734">
+
+        <RadioButton
+            android:id="@+id/upper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upper Pocket" />
+
+        <RadioButton
+            android:id="@+id/lower"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lower Pocket" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="signout"
+        android:text="LogOut"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rdGroup" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="384dp"
+        android:layout_height="32dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteY="14dp" />/>
+
+</android.support.constraint.ConstraintLayout>
